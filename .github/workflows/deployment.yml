@@ -1,7 +1,7 @@
 name: EC2 CodeDeploy CI/CD pipeline
 on:
   push:
-    branches: [ master ]
+    branches: [ master, refactoring ]
 
 jobs:
   continuous-integration:
@@ -19,7 +19,7 @@ jobs:
   continuous-deployment:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/refactoring'
     steps:
      # Step 1
       - name: Configure AWS credentials
