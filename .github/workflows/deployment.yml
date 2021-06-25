@@ -19,7 +19,7 @@ jobs:
   continuous-deployment:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
-    if: github.ref == 'refs/heads/master || github.ref == 'refs/heads/refactoring'
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/refactoring'
     steps:
      # Step 1
       - name: Configure AWS credentials
