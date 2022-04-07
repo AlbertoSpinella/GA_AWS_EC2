@@ -80,7 +80,7 @@
 
 ## 4. Create EC2 instance
 
- - In your AWS account, go to the **EC2 control panel**, in the section **Roles**: https://console.aws.amazon.com/ec2/v2/home
+ - In your AWS account, go to the **EC2 control panel**: https://console.aws.amazon.com/ec2/v2/home
  - Click on "**Launch instance**" and find "**Ubuntu Server 20.04 LTS (HVM), SSD Volume Type**", and be sure that "**64-bit (x86)**" is selected. After that, click on "**Select**".
  - Keep "**t2.micro**" selected, and click on "**Next: Configure Instance Details**".
  - In "**IAM role**", select the role for EC2 we created before (in this example, the name is "***ec2-role***"). Then click on "**Next: Add Storage**".
